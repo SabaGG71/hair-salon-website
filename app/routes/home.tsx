@@ -18,6 +18,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import hair from "../../public/hair.jpg";
+import { Link } from "react-router";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -25,7 +26,7 @@ export function meta({}: Route.MetaArgs) {
     {
       name: "description",
       content:
-        "Inga's Hair Studio — ინგა, ქალის თმის სტილისტი. Luxury სერვისი. დარეკეთ: 599 36 06 28",
+        "Inga's Hair Studio — ინგა, ქალის თმის სტილისტი. დარეკეთ: 599 36 06 28",
     },
   ];
 }
@@ -419,7 +420,7 @@ export default function Home() {
                   fontWeight: 400,
                 }}
               >
-                Luxury სტილინგი
+                სერვისები
               </h2>
             </div>
             <p className="text-white/40 text-sm max-w-xs leading-relaxed md:text-right">
@@ -627,7 +628,15 @@ export default function Home() {
             </span>
           </div>
           <p className="text-white text-base tracking-wider">
-            © 2026 Inga's Hair Studio - შექმნილია Webnotes-ის მიერ ✅
+            © 2026 Inga's Hair Studio - შექმნილია{" "}
+            <Link
+              to="https://webnotes.ge"
+              className="underline font-bold mr-1"
+              target="_blank"
+            >
+              Webnotes
+            </Link>
+            -ის მიერ ✅
           </p>
           <a
             href={PHONE_HREF}
