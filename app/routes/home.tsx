@@ -33,7 +33,7 @@ export function meta({}: Route.MetaArgs) {
 
 const PHONE = "599360628";
 const PHONE_DISPLAY = "599 36 06 28";
-const PHONE_HREF = `ტელ:+995${PHONE}`;
+const PHONE_HREF = `tel:+995${PHONE}`;
 
 /* ── Scroll reveal hook ── */
 function useReveal(className = "reveal") {
